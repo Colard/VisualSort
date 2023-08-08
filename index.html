@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Visual Sort</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class = "steps">
+		<p>Number of steps:</p>
+		<p class = "numberOfSteps">0</p>
+	</div>
+	<div id = "sortBlock">
+	</div>
+
+	<div class = "instruments">
+		<div class = "mainInstruments">
+			<div class = "chooseArrLength">
+				<p>Array length (max 999):</p>
+				<input type="number" id="lengthOfArr" min="1" max="999" value = "100">
+			</div>
+			<div class = "changeAnimationSpeed">
+				<p>Animation speed:</p>
+				<div class = "range">
+					<input type="range" id = "speedRange" min = "1" max = "50" value = "50">
+					<p>х1.00</p>
+				</div>
+			</div>
+			<button id = "createArr">Create array</button>
+		</div>
+		<div class = "chooseSortAlgoritm">
+			<button id = "bubbleSort">Bubble sort</button>
+			<button id = "shakerSort">Shaker sort</button>
+			<button id = "combSort">Combo Sort</button>
+			<button id = "gnomeSort">Gnome sort</button>
+			<button id = "insertionSort">Insertion sort</button>
+			<button id = "shellSort">Shell sort</button>
+			<button id = "selectionSort">Selection sort</button>
+			<button id = "heapSort">Heap sort</button>
+			<button id = "quicksSort">Quick sort</button>
+		</div>	
+	</div>
+
+	<script src = "js/onLoad.js"> </script>
+	<script src = "js/mainFunctions.js"> </script>
+	<script src = "js/sortFunction.js"> </script>
+	<script src = "js/events.js"> </script>
+</body>
+</html>
